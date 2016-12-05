@@ -9,6 +9,10 @@ import os
 def we_need_to_go_utf8(): 
     os.system('iconv -o utf8_movie_lines.txt -f iso-8859-1 -t utf-8 movie_lines.txt')
     os.system('iconv -o utf8_movie_conversations.txt -f iso-8859-1 -t utf-8 movie_conversations.txt')
+    os.system('iconv -f iso-8859-1 -t utf-8 movie_lines.txt >utf8_movie_lines.txt')
+    os.system('iconv -f iso-8859-1 -t utf-8 movie_conversations.txt >utf8_movie_conversations.txt')
+
+
 
 ''' 
     1. Read from 'movie-lines.txt'
